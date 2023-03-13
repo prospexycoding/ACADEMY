@@ -111,7 +111,6 @@ main{
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 10px;
-    border-bottom: 3px solid orange;
     
 }
 
@@ -119,6 +118,8 @@ main{
     font-size: 42px;
     color: white;
     font-weight: 400;
+    border-bottom: 3px solid orange;
+
 }
 
 .enquiry{
@@ -403,7 +404,7 @@ footer nav a:hover{
         align-items: center;
         background-color: blue;
         padding: 20px 40px;
-        gap: 100px;
+        gap: 50px;
     }
     
     .first-section nav{
@@ -411,14 +412,14 @@ footer nav a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 7px;
     
     }
     
     .first-section nav a{
         text-decoration: none;
         color: white;
-        font-size: 13px;
+        font-size: 10px;
         transition: transform 0.5s ease;
     }
     
@@ -433,15 +434,15 @@ footer nav a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 10px;
-        border-bottom: 3px solid orange;
+       
         
     }
     
     .welcome h1{
-        font-size: 17px;
+        font-size: 15px;
         color: white;
-        font-weight: 400;
+        font-weight: 500;
+        border-bottom: 3px solid orange;
     }
     
     .enquiry{
@@ -548,7 +549,7 @@ footer nav a:hover{
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 95px;
+        left: 97px;
         top: 100px;
     }
     
