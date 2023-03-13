@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+}
+
+.call{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+.phone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 40px;
+    gap: 5px;
+    border-right: 1px solid black;
+}
+
+.logo{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nigeria{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+
+}
+
+.first-section{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: blue;
+    padding: 20px 40px;
+    gap: 95px;
+}
+
+.first-section nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.first-section nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.5s ease;
+}
+
+.first-section nav a:hover{
+  transform: scale(1.2);
+  color: orange;
+}
+
+.welcome{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid orange;
+    
+}
+
+.welcome h1{
+    font-size: 42px;
+    color: white;
+    font-weight: 400;
+}
+
+.enquiry{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.enquiry button{
+    width: 130px;
+    height: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.enquiry button:hover{
+    background-color: orange;
+
+}
+
+.social{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.social div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.social div img{
+    width: 25px;
+    transition: transform 0.5s ease;
+}
+
+.social div img:hover{
+    transform: scale(1.2);
+}
+
+.second-section{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.keypad{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.keypad img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.lady{
+    position: absolute;
+    right: 410px;
+    bottom: 130px;
+    border: 8px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lady img{
+    height: 250px;
+    width: 250px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px 20px;
+
+}
+
+footer p{
+    width: 50%;
+    font-size: 14px;
+    color: black;
+}
+
+footer nav{
+     width: 50%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+     gap: 20px;
+     
+}
+
+footer nav a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s ease;
+}
+
+footer nav a:hover{
+    transform: scale(1.2);
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile viev  */
+
+
+@media(max-width:450px){
+    body{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+    }
+    
+    header{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        background-color: white;
+    }
+    
+    .call{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    
+    }
+
+    .call span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-left: 1px solid black;
+        padding-left: 15px;
+    }
+
+    .call span img{
+        width: 15px;
+    }
+    
+    .phone{
+        height: 0%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone img{
+        width: 50px;
+    }
+
+    .phone p{
+        font-size: 14px;
+    }
+    
+    .logo{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 25px;
+    }
+    
+    .nigeria{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .nigeria img{
+        width: 25px;
+    }
+
+    .nigeria p{
+        font-size: 14px;
+    }
+    
+    
+    main{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        position: relative;
+    
+    }
+    
+    .first-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        padding: 20px 40px;
+        gap: 100px;
+    }
+    
+    .first-section nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    
+    .first-section nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        transition: transform 0.5s ease;
+    }
+    
+    .first-section nav a:hover{
+      transform: scale(1.2);
+      color: orange;
+    }
+    
+    .welcome{
+        width: 60%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 3px solid orange;
+        
+    }
+    
+    .welcome h1{
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .enquiry{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .enquiry button{
+        width: 90px;
+        height: 30px;
+        font-size: 17px;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+    }
+    
+    .enquiry button:hover{
+        background-color: orange;
+    
+    }
+    
+    .social{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+    
+    .social div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .social div img{
+        width: 20px;
+        transition: transform 0.5s ease;
+    }
+    
+    .social div img:hover{
+        transform: scale(1.2);
+    }
+    
+    .second-section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .top-container{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .keypad{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+  
+    
+    .keypad img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .lady{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border: none;
+        right: 98px;
+        bottom: 200px;
+    }
+    
+    .lady img{
+        width: 130px;
+        height: 130px;
+        border: 5px solid white;
+    }
+    
+    
+    footer{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        gap: 10;
+
+    
+    }
+    
+    footer p{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: black;
+        
+    }
+
+    footer nav{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+   }
+   
+   footer nav a{
+       text-decoration: none;
+       color: black;
+       font-size: 14px;
+       transition: transform 0.5s ease;
+   }
+   
+   footer nav a:hover{
+       transform: scale(1.2);
+       color: orange;
+   }
+   
+
+
+
+}
