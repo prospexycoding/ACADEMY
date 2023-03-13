@@ -396,7 +396,7 @@ footer nav a:hover{
     
     .first-section{
         width: 100%;
-        min-height: 50%;
+        min-height: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -439,7 +439,7 @@ footer nav a:hover{
     }
     
     .welcome h1{
-        font-size: 20px;
+        font-size: 17px;
         color: white;
         font-weight: 400;
     }
@@ -498,7 +498,7 @@ footer nav a:hover{
     
     .second-section{
         width: 100%;
-        min-height: 50%;
+        min-height: 40%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -548,7 +548,7 @@ footer nav a:hover{
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 100px;
+        left: 95px;
         top: 100px;
     }
     
