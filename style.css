@@ -26,6 +26,10 @@ header{
     background-color: white;
 }
 
+.menu{
+    display: none;
+}
+
 .call{
     width: 20%;
     display: flex;
@@ -68,6 +72,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
+    overflow: hidden;
 
 }
 
@@ -97,6 +102,10 @@ main{
     color: white;
     font-size: 20px;
     transition: transform 0.5s ease;
+}
+
+nav a img{
+    display: none;
 }
 
 .first-section nav a:hover{
@@ -154,11 +163,11 @@ main{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 5px;
+    padding-bottom: 50px;
 }
 
 .social div{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -172,6 +181,38 @@ main{
 
 .social div img:hover{
     transform: scale(1.2);
+}
+
+.clock{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 133px;
+}
+
+.clock h3{
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+}
+
+.time{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.time h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 2px;
 }
 
 .second-section{
@@ -299,6 +340,7 @@ footer nav a:hover{
         justify-content: flex-start;
         align-items: center;
         background-color: white;
+        position: relative;
     }
     
     header{
@@ -311,7 +353,10 @@ footer nav a:hover{
         padding: 10px;
         gap: 10px;
         background-color: white;
+
     }
+
+    
     
     .call{
         width: 30%;
@@ -392,7 +437,12 @@ footer nav a:hover{
         justify-content: center;
         align-items: center;
         gap: 0;
+        transition: 0.5s ease;
     
+    }
+
+    .adjust{
+        margin-top: 378px;
     }
     
     .first-section{
@@ -407,23 +457,57 @@ footer nav a:hover{
         gap: 50px;
     }
     
-    .first-section nav{
+    nav{
         width: 100%;
+        min-height: 200px;
+        left: -100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 7px;
-    
+        gap: 4px;
+        background-color: blue;
+        z-index: 100;
+        position: absolute;
+        padding: 20px;
+        top: 71px;
+        transition: 0.5s ease;
+    }
+
+    .slide{
+        left: 0;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    nav a img{
+        display: block;
+    }
+
+    nav a span{
+        font-size: 20px;
+        color: white;
     }
     
-    .first-section nav a{
+    nav a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         text-decoration: none;
         color: white;
         font-size: 10px;
         transition: transform 0.5s ease;
+        gap: 10px;
     }
     
-    .first-section nav a:hover{
+    nav a:hover{
       transform: scale(1.2);
       color: orange;
     }
@@ -496,6 +580,48 @@ footer nav a:hover{
     .social div img:hover{
         transform: scale(1.2);
     }
+
+    
+.clock{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.clock h3{
+    display: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+}
+
+
+
+.time{
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 100px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.time h1{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.time h1 span{
+    font-size: 15px;
+}
     
     .second-section{
         width: 100%;
